@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Rampart+One&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&family=Zen+Kaku+Gothic+Antique:wght@400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section Start*/
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(195deg, #19CBD6 7.60%, #02282A 100%);
+}
+.hero-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr); 
+    width: 80vw;   
+    height: 80vh;
+    border: 10px  solid white;
+}
+
+    
+.title {
+    grid-area: 3/2/4/6;
+    align-self: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    color: #C4C4C4;
+}
+.sub-title {
+    grid-area: 4/2/5/6;
+    align-self: center;
+    font-size: 75px;
+    font-family: 'Source Serif 4', serif;
+    font-weight: 800;
+    color: #FFF;    
+}
+/* Hero Section End*/
+
+
+/* Resume Section Start*/
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.resume-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    text-align: center;
+    width: 25rem;
+    gap: 20px;
+}
+
+.my-pic {
+    width: 15rem;
+    height: 15rem;  
+    border-radius: 50%;
+    background-image: url('/Assets/my-pic.png');
+    background-size: cover;
+}
+
+.my-pic, h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #C4C4C4;
+    letter-spacing: .1rem;
+}
+
+.my-pic, p {
+    font-family: 'Source Serif 4', serif;
+    letter-spacing: .1rem;
+}
+/* Resume Section End*/
+
+
+/* Word Section Start*/
+.work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(195deg, #19CBD6 7.60%, #02282A 100%);
+}
+
+.work-container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 80vh;
+    margin: 5rem 0 5rem 0;
+    gap: 10px;
+}
+
+.work-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    border: 10px solid #FFF;
+    padding: 5px;
+    width: 100%;
+    height: 10rem;
+}
+
+.work-container img {
+    grid-area: 1/1/2/2;
+    width: 100%;
+    height: 10rem;
+}
+.text-wrap {
+    grid-area: 1/2/2/5;
+    font-family: 'Open Sans', sans-serif;
+    color: #C4C4C4;
+    height: 10rem;
+    padding: 10px;
+}
+/* Word Section End*/
+
+/* Contact Section Start*/
+/* Contact Section End*/
